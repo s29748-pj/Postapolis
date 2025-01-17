@@ -418,7 +418,7 @@ const dialogues = [
     ]
   },
   {
-    id: "Paca522", characterId: "Paca", text: "",
+    id: "Paca523", characterId: "Paca", text: "",
     options: [
       { text: "Damn, i should be an actor...", nextDialogueId: null, action:goToTent}
   
