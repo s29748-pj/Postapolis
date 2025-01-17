@@ -1,0 +1,117 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#screenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  transition: opacity 5s ease;
+  opacity: 1; /* Czarny ekran na początku */
+  pointer-events: none;
+}
+
+#overlayMessage {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+#location {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+#backgroundLayer {
+  position: fixed; /* Aby tło pokrywało cały ekran */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Tło za innymi elementami */
+  filter: brightness(0.8);
+  transition: all 0.5s ease;
+}
+
+#Avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  max-width: 400px;
+  height: auto;
+  z-index: 10;
+}
+
+#Avatar img {
+  width: 100%;
+  height: auto;
+  
+}
+
+#UI {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+#situation {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+#dialogue {
+  text-align: left;
+  padding: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  white-space: pre-wrap;
+  overflow-y: scroll;
+  font-size: 1rem;
+  height: auto;
+  flex-grow: 0;
+  margin: 0;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
