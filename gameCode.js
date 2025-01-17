@@ -122,82 +122,82 @@ const dialogues = [
   {
     id: "Guard2", characterId: "Guard", text: "Huge man turns towards you.",
     options: [
-      { text: "Can we talk?", nextDialogueId: "guard3"}
+      { text: "Can we talk?", nextDialogueId: "Guard3"}
     ]
   },
 
   {
     id: "Guard3", characterId: "Guard", text: "I guess we can... What do you want?",
     options: [
-      { text: "Sorry but... Who are you?", nextDialogueId: "guard4"}
+      { text: "Sorry but... Who are you?", nextDialogueId: "Guard4"}
     ]
   },
   {
     id: "Guard4", characterId: "Guard", text: "Hmm... so you really forgot? Pitty... To think i save your ass for nothing then",
     options: [
-      { text: "For nothing?", nextDialogueId: "guard41"},
-      { text: "you saved me??", nextDialogueId: "guard42"},
+      { text: "For nothing?", nextDialogueId: "Guard41"},
+      { text: "you saved me??", nextDialogueId: "Guard42"},
     ]
   },
   {
     id: "Guard41", characterId: "Guard", text: "I saved Igu deKerente. A renowned Xenopaceologist. Who are you without centuries of knowledge? Just another drooling idiot",
     options: [
-      { text: "Excuse me?", nextDialogueId: "guard411"}
+      { text: "Excuse me?", nextDialogueId: "Guard411"}
     ]
   },
 
   {
     id: "Guard411", characterId: "Guard", text: "You heard me right. you should thank me for forshadowing tho. Most of your kind of people really are just drooling idiots, holding to any bits of old world stuck in their heads...",
     options: [
-      { text: "What do you mean by that?", nextDialogueId: "guard412"}
+      { text: "What do you mean by that?", nextDialogueId: "Guard412"}
     ]
   },
   {
     id: "Guard412", characterId: "Guard", text: "There used to be something called internet. you had it streamed straight into your brain. those less fortunate than you re watches everything they saved, time and time again. since your kind doesn't age at all... they could do it for eternity. frying their brains out",
     options: [
-      { text: "...", nextDialogueId: "guard413"}
+      { text: "...", nextDialogueId: "Guard413"}
     ]
   }, 
   {
     id: "Guard413", characterId: "Guard", text: "but maybe it's not too late to save your life... Maybe they'll fix you there... maybe they'll fix your memory and pay me... or maybe not. who knows what leeches can really do.",
     options: [
-      { text: "...leeches", nextDialogueId: "guard414"}
+      { text: "...leeches?", nextDialogueId: "Guard414"}
     ]
   },
   {
     id: "Guard414", characterId: "Guard", text: "ehh... don't get me started on that. you'll get it soon enough.",
     options: [
-      { text: "right... you said you saved me...", nextDialogueId: "guard42"}
+      { text: "right... you said you saved me...", nextDialogueId: "Guard42"}
     ]
   },
   {
     id: "Guard42", characterId: "Guard", text: "Yes, i saved you big time.",
     options: [
-      { text: "How come?", nextDialogueId: "guard421"}
+      { text: "How come?", nextDialogueId: "Guard421"}
     ]
   }, 
   {
     id: "Guard421", characterId: "Guard", text: "How can i explain it to you... well, let's say Euskincan empire abolished all institution you worked at. Manhunt will follow soon",
     options: [
-      { text: "Euskincan empire?", nextDialogueId: "guard422"},
+      { text: "Euskincan empire?", nextDialogueId: "Guard422"},
     ]
   },
   {
     id: "Guard422", characterId: "Guard", text: "Te only centralized country left on this god forsaken continent, that just so happens to hate Ksekses and anything even moderately related to them. You worked in a industry dedicated to maintaining them. but don't ask me about it, talk with your pet if you want to learn more...",
     options: [
-      { text: "yeah i'll will... but how did you know who i am?", nextDialogueId: "guard423"}
+      { text: "yeah i'll will... but how did you know who i am?", nextDialogueId: "Guard423"}
     ]
   },
   {
     id: "Guard423", characterId: "Guard", text: "Despite you screaming your name out loud while i was dragging you to a storage...i had my sources.",
     options: [
-      { text: "right... ", nextDialogueId: "guard424"}
+      { text: "right... ", nextDialogueId: "Guard424"}
     ]
   },
   {
     id: "Guard424", characterId: "Guard", text: "before you ask and piss me off. No I'm not selling you. i'm getting paid from your organisation to get you to Thorn safely.",
     options: [
-      { text: "... how am i even supposed to answer that?", nextDialogueId: "guard425"}
+      { text: "... how am i even supposed to answer that?", nextDialogueId: "Guard425"}
     ]
   },
   {
@@ -638,7 +638,7 @@ function fadeInScreenOverlayWithMessages() {
     if (messageIndex < messages.length) {
       messageElement.textContent = messages[messageIndex];
       messageIndex++;
-      setTimeout(showNextMessage, 4000); 
+      setTimeout(showNextMessage, 3000); 
     } else {
       overlay.style.opacity = "0";
       setTimeout(() => {
